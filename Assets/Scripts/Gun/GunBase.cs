@@ -20,11 +20,11 @@ public class GunBase : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(1))
         {
            _currentCoroutine = StartCoroutine(StartShoot());
         }
-        else if (Input.GetMouseButtonUp(0))
+        else if (Input.GetMouseButtonUp(1))
         {
             if (_currentCoroutine != null) 
                 StopCoroutine(_currentCoroutine);
