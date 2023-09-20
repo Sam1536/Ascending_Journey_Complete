@@ -10,10 +10,12 @@ public class GameTitle : MonoBehaviour
     public void TitleGameOFF()
     {
         titleGame.SetActive(false);
+      
     }
 
     public void TitleGameON()
     {
         titleGame.SetActive(true);
+        
     }
 }

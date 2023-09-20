@@ -6198,7 +6198,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuButton: {fileID: 590627374}
-  gameTitle: {fileID: 1399944489}
+  gameTitle: {fileID: 1483758768}
 --- !u!224 &1160119438
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7915,7 +7915,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1399944488}
   - component: {fileID: 1399944487}
-  - component: {fileID: 1399944489}
   m_Layer: 5
   m_Name: Options
   m_TagString: Untagged
@@ -7936,7 +7935,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuButton: {fileID: 1093424800}
-  gameTitle: {fileID: 1399944489}
+  gameTitle: {fileID: 1483758768}
 --- !u!224 &1399944488
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7958,19 +7957,6 @@ RectTransform:
   m_AnchoredPosition: {x: 960, y: 540}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1399944489
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1399944486}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 730c78b20afe83240bc3eefbb9ecd5d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  titleGame: {fileID: 1096350707}
 --- !u!1 &1439704682
 GameObject:
   m_ObjectHideFlags: 0
@@ -8203,6 +8189,7 @@ GameObject:
   - component: {fileID: 1483758767}
   - component: {fileID: 1483758766}
   - component: {fileID: 1483758765}
+  - component: {fileID: 1483758768}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -8325,6 +8312,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1483758763}
   m_CullTransparentMesh: 1
+--- !u!114 &1483758768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483758763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 730c78b20afe83240bc3eefbb9ecd5d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  titleGame: {fileID: 1096350707}
 --- !u!1 &1484481971
 GameObject:
   m_ObjectHideFlags: 0

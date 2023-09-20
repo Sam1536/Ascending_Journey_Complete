@@ -7384,7 +7384,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -188.7063, y: -118}
+  m_AnchoredPosition: {x: -204, y: -99}
   m_SizeDelta: {x: 367.44604, y: 148.45996}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &718750372
@@ -7493,8 +7493,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd976d400c605734f812b9fb686d5a90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menuButton: {fileID: 0}
-  gameTitle: {fileID: 0}
+  menuButton: {fileID: 1647987938}
+  gameTitle: {fileID: 918848188}
 --- !u!1 &726007720
 GameObject:
   m_ObjectHideFlags: 0
@@ -9385,7 +9385,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &917624696
 Transform:
   m_ObjectHideFlags: 0
@@ -9461,6 +9461,56 @@ MonoBehaviour:
   snapshot_01: {fileID: 24500006, guid: ce8d1a7ee28c6834aa04ce791ec1115e, type: 2}
   snapshot_02: {fileID: -1427441993860418958, guid: ce8d1a7ee28c6834aa04ce791ec1115e, type: 2}
   tagToCompare: Player
+--- !u!1 &918848186
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 918848187}
+  - component: {fileID: 918848188}
+  m_Layer: 5
+  m_Name: Title
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &918848187
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918848186}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1508456024}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &918848188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918848186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 730c78b20afe83240bc3eefbb9ecd5d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  titleGame: {fileID: 918848186}
 --- !u!1 &925815716
 GameObject:
   m_ObjectHideFlags: 0
@@ -16396,12 +16446,13 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 246079390}
   - {fileID: 718750371}
+  - {fileID: 246079390}
   - {fileID: 1647987939}
   - {fileID: 1625691954}
   - {fileID: 1917319131}
   - {fileID: 961860740}
+  - {fileID: 918848187}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -20226,7 +20277,7 @@ GameObject:
   - component: {fileID: 1929895124}
   - component: {fileID: 1929895123}
   - component: {fileID: 1929895122}
-  - component: {fileID: 1929895125}
+  - component: {fileID: 1929895126}
   m_Layer: 5
   m_Name: Back Game
   m_TagString: Untagged
@@ -20299,7 +20350,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1929895125}
+      - m_Target: {fileID: 1929895126}
         m_TargetAssemblyTypeName: ButtonMenuGameplayer, Assembly-CSharp
         m_MethodName: BackMenuPaused
         m_Mode: 1
@@ -20349,7 +20400,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1929895120}
   m_CullTransparentMesh: 1
---- !u!114 &1929895125
+--- !u!114 &1929895126
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20361,8 +20412,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd976d400c605734f812b9fb686d5a90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menuButton: {fileID: 0}
-  gameTitle: {fileID: 0}
+  menuButton: {fileID: 1647987938}
+  gameTitle: {fileID: 918848188}
 --- !u!1 &1937878426
 GameObject:
   m_ObjectHideFlags: 0

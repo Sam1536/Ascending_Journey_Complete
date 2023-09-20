@@ -16,7 +16,7 @@ public class MenuManegerButtons : MonoBehaviour
 
     private void Awake()
     {
-        Time.timeScale = 1;
+        Time.timeScale = 1f;
     }
 
     private void OnEnable()
